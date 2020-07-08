@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Employees</title>
+    <script src="main.js"></script>
+
+    <!--<meta http-equiv="refresh" content="0; url=jindex.html">
+    <script type="text/javascript">
+        window.location.href = "jindex.html"
+    </script>-->
+
+</head>
+<body>
+    <h1>Wellcome to heroes</h1>
+
+    <pre>
+        ID: <input type="number" id="employeeIdToGet" />
+        <button onclick="getEmployeesById()">Get Employee by Id</button>
+
+        FirstName: <input type="text" id="FirstName" />
+        LastName: <input type="text" id="LastName" />
+        Gender: <input type="text" id="Gender" />
+        Salary: <input type="text" id="Salary" />
+        <button onclick="addEmployees()">Add Employee</button>
+
+        UserName: <input type="text" id="UserName" />
+        Password: <input type="text" id="Password" />
+        <button onclick="getAllEmployees()">Get Employees</button>
+
+        ENTER ID: <input type="number" id="employeeIdToDelete" />
+        <button onclick="deleteEmployees()">Delete Entered Employee</button>
+
+        CHOOSE ID: <select id="toDelete" size="5"></select>
+        <button onclick="deleteEmployees()">Delete Choosen Employee</button>
+
+        ID: <input type="number" id="IdToUpdate" />
+        FirstName: <input type="text" id="FirstNameToUpdate" />
+        LastName: <input type="text" id="LastNameToUpdate" />
+        Gender: <input type="text" id="GenderToUpdate" />
+        Salary: <input type="text" id="SalaryToUpdate" />
+        <button onclick="updateEmployees()">Update Employee</button>
+    </pre>
+    <hr />
+
+    <div id="heroes"></div>
+
+</body>
+</html>

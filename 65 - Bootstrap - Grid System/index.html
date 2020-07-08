@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--
+        Tier = One Category of a Browser Width
+        Bootstrap Tiers: 
+        Extra Small:    <  576px    col-
+        Small:          >= 576px    col-sm-
+        Medium:         >= 768px    col-md-
+        Large:          >= 992px    col-lg-
+        Extra Large:    >= 1200px   col-xl- 
+     -->
+    
+    <div class="container-fluid">
+
+        <span>Same Width: </span>
+        <div class="row">
+            <div class="col">A</div>
+            <div class="col">B</div>
+            <div class="col">C</div>
+            <div class="col">D</div>
+        </div>
+
+        <span>Adjustment: </span>
+        <div class="row">
+            <div class="col">A</div>
+            <div class="col-6">B</div>
+            <div class="col">C</div>
+            <div class="col">D</div>
+        </div>
+
+        <span>Different Width - No Overflow: </span>
+        <div class="row">
+            <div class="col-1">A</div>
+            <div class="col-2">B</div>
+            <div class="col-3">C</div>
+            <div class="col-6">D</div>
+        </div>
+
+        <span>Different Width - Overflow: </span>
+        <div class="row">
+            <div class="col-2">A</div>
+            <div class="col-6">B</div>
+            <div class="col-5">C</div>
+            <div class="col-2">D</div>
+        </div>
+
+        <span>Tiers: </span>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3">A</div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-6 col-xl-3">B</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-3">C</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-3">D</div>
+        </div>
+
+        <span>Offset: </span>
+        <div class="row">
+            <div class="col-1">A</div>
+            <div class="offset-2 col-3">B</div>
+            <div class="col-3">C</div>
+            <div class="offset-1 col-2">D</div>
+        </div>
+
+        <span>Hidden Up: </span>
+        <div class="row">
+            <div class="col">A</div>
+            <div class="col">B</div>
+            <div class="col d-md-none">C</div>
+            <div class="col">D</div>
+        </div>
+
+        <span>Hidden Down: </span>
+        <div class="row">
+            <div class="col">A</div>
+            <div class="col">B</div>
+            <div class="col d-none d-md-block">C</div>
+            <div class="col">D</div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

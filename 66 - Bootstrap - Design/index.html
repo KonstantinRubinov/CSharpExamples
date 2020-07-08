@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Another action 2</a>
+                                    <a class="dropdown-item" href="#">Another action 3</a>
+                                    <a class="dropdown-item" href="#">Another action 4</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <a class="dropdown-item" href="#">Something else here 2</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <span>Typography: </span>
+        <div class="row">
+            <div class="col">
+                <p class="text-left">Left aligned text</p>
+                <p class="text-center">Center aligned text</p>
+                <p class="text-right">Right aligned text</p>
+                <p class="text-justify">Justify aligned text ... Justify aligned text ... Justify aligned text ...
+                    Justify aligned text ... Justify aligned text ... Justify aligned text ... Justify aligned text ...
+                    Justify aligned text ... Justify aligned text ... Justify aligned text ... Justify aligned text ...
+                    Justify aligned text ... Justify aligned text ... Justify aligned text ... Justify aligned text ...
+                    Justify aligned text ... Justify aligned text ... Justify aligned text ... Justify aligned text ...
+                    Justify aligned text ... Justify aligned text ... Justify aligned text ... Justify aligned text ...
+                    Justify aligned text ... Justify aligned text ... Justify aligned text ... Justify aligned text ...
+                    Justify aligned text ... Justify aligned text ... Justify aligned text ... Justify aligned text ...
+                    Justify aligned text ... Justify aligned text ... Justify aligned text ... Justify aligned text ...
+                    Justify aligned text ... Justify aligned text ... Justify aligned text ... Justify aligned text ...
+                    Justify aligned text ... Justify aligned text ... Justify aligned text ... Justify aligned text ...
+                    Justify aligned text ... Justify aligned text ... Justify aligned text ... Justify aligned text ...
+                    Justify aligned text ... Justify aligned text ... Justify aligned text ... Justify aligned text ...
+                    Justify aligned text ... Justify aligned text ... Justify aligned text ... Justify aligned text ...
+                    Justify aligned text ... Justify aligned text ... Justify aligned text ... Justify aligned text ...
+                    Justify aligned text ... Justify aligned text ... Justify aligned text ... Justify aligned text ...
+                    Justify aligned text ... Justify aligned text ... Justify aligned text ... Justify aligned text ...
+                    Justify aligned text ... Justify aligned text ... Justify aligned text ... Justify aligned text ...
+                    Justify aligned text ... Justify aligned text ... Justify aligned text ... Justify aligned text ...
+                </p>
+                <p class="text-nowrap">No wrap text...No wrap text...No wrap text...No wrap text...No wrap text...No
+                    wrap text...No wrap text...No wrap text...No wrap text...No wrap text...No wrap text...No wrap
+                    text...No wrap text...No wrap text...No wrap text...No wrap text...No wrap text...No wrap text...No
+                    wrap text...No wrap text...No wrap text...No wrap text...No wrap text...No wrap text...No wrap
+                    text...No wrap text...No wrap text...No wrap text...No wrap text...No wrap text...No wrap text...No
+                    wrap text...No wrap text...No wrap text...No wrap text...No wrap text...No wrap text...No wrap
+                    text...No wrap text...</p>
+                <p class="text-lowercase">THIS IS MY TEXT</p>
+                <p class="text-uppercase">this is my text</p>
+                <p class="text-capitalize">this is my text</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <ul class="list-unstyled">
+                    <li>Puppy</li>
+                    <li>Kitten</li>
+                    <li>Bunny</li>
+                </ul>
+                <ul class="list-inline">
+                    <li class="list-inline-item">Puppy</li>
+                    <li class="list-inline-item">Kitten</li>
+                    <li class="list-inline-item">Bunny</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <table class="table table-striped table-bordered table-hover table-dark">
+                    <tr>
+                        <th>Animal</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Puppy</td>
+                        <td>$70.00</td>
+                    </tr>
+                    <tr>
+                        <td>Kitten</td>
+                        <td>$65.00</td>
+                    </tr>
+                    <tr>
+                        <td>Bunny</td>
+                        <td>$37.90</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="form-group">
+                        <label for="firstName">First name: </label>
+                        <input type="text" id="firstName" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last name: </label>
+                        <input type="text" id="lastName" class="form-control">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-default btn-lg">Button</button>
+                <button class="btn btn-primary btn-lg">Button</button>
+                <button class="btn btn-success btn-lg">Button</button>
+                <button class="btn btn-info btn-lg">Button</button>
+                <button class="btn btn-warning btn-lg">Button</button>
+                <button class="btn btn-danger btn-lg">Button</button>
+                <button class="btn btn-link btn-lg">Button</button>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-default">Button</button>
+                <button class="btn btn-primary">Button</button>
+                <button class="btn btn-success">Button</button>
+                <button class="btn btn-info">Button</button>
+                <button class="btn btn-warning">Button</button>
+                <button class="btn btn-danger">Button</button>
+                <button class="btn btn-link">Button</button>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-default btn-sm">Button</button>
+                <button class="btn btn-primary btn-sm">Button</button>
+                <button class="btn btn-success btn-sm">Button</button>
+                <button class="btn btn-info btn-sm">Button</button>
+                <button class="btn btn-warning btn-sm">Button</button>
+                <button class="btn btn-danger btn-sm">Button</button>
+                <button class="btn btn-link btn-sm">Button</button>
+            </div>
+            <div class="col-12">
+                <a class="btn btn-default btn-sm">Link</a>
+                <a class="btn btn-primary btn-sm">Link</a>
+                <a class="btn btn-success btn-sm">Link</a>
+                <a class="btn btn-info btn-sm">Link</a>
+                <a class="btn btn-warning btn-sm">Link</a>
+                <a class="btn btn-danger btn-sm">Link</a>
+                <a class="btn btn-link btn-sm">Link</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img class="rounded" src="assets/images/kitten.jpg" width="200">
+                <img class="img-thumbnail" src="assets/images/kitten.jpg" width="200">
+                <img class="rounded-circle" src="assets/images/kitten.jpg" width="200">
+                <img class="img-thumbnail rounded-circle" src="assets/images/kitten.jpg" width="200">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <p>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Link with href
+                    </a>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Button with data-target
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                        proident.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-6">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="1000">
+                            <img src="/assets/images/kitten.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="1000">
+                            <img src="/assets/images/kitten2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="1000">
+                            <img src="/assets/images/kitten3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="1000">
+                            <img src="/assets/images/kitten4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    Launch demo modal
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">Delete this Product?</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Are you sure you want to delete this product?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Yes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-border text-secondary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-border text-success" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-border text-danger" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-border text-warning" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-border text-info" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-border text-light" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-border text-dark" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+
+                <button class="btn btn-primary" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    <span class="sr-only">Loading...</span>
+                </button>
+                <button class="btn btn-primary" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Loading...
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>

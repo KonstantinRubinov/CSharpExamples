@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Heroes</title>
+    <script src="main.js"></script>
+
+    <!--<meta http-equiv="refresh" content="0; url=jindex.html">
+    <script type="text/javascript">
+        window.location.href = "jindex.html"
+    </script>-->
+
+</head>
+<body>
+    <h1>Wellcome to heroes</h1>
+
+    <pre>
+        ID: <input type="number" id="heroeIdToGet" />
+        <button onclick="getById()">Get Hero by Id</button>
+
+        NAME: <input type="text" id="heroeName" />
+        <button onclick="addHero()">Add Hero</button>
+
+        ENTER ID: <input type="number" id="heroeIdToDelete" />
+        <button onclick="deleteHero()">Delete Entered Hero</button>
+
+        CHOOSE ID: <select id="toDelete" size="5"></select>
+        <button onclick="deleteChoosenHero()">Delete Choosen Hero</button>
+        
+
+        ID: <input type="number" id="heroeIdToUpdate" />
+        NAME: <input type="text" id="heroeNameToUpdate" />
+        <button onclick="updateHero()">Update Hero</button>
+
+
+
+
+        
+    </pre>
+    <hr />
+    
+    <div id="heroes"></div>
+
+</body>
+</html>

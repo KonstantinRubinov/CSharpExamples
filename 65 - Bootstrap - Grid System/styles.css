@@ -1,0 +1,22 @@
+.row > div {
+    height: 50px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.row > div:nth-child(1) {
+    background-color: red;
+}
+
+.row > div:nth-child(2) {
+    background-color: green;
+}
+
+.row > div:nth-child(3) {
+    background-color: blue;
+}
+
+.row > div:nth-child(4) {
+    background-color: yellow;
+}
+

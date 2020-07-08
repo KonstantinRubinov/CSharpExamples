@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Heroes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+
+        var mainUrl = 'http://localhost:53084/api/'
+        var heroUrl = mainUrl + "heroes/";
+
+        $(document).ready(function () {
+            RefreshList();
+        });
+
+        function RefreshList() {
+            var data = "";
+            $.get(heroUrl, function (result) {
+                $(result).each(function (index, value) {
+                    data += "<li>" + value.id + ": " + value.name + "</li>";
+                });
+                
+                $("#list1").html(data);
+            });
+
+        }
+        function get2() {
+            var id1 = $("#txt").val();
+            $.get(heroUrl + id1, function (result1) {
+                $("#spn").html("id: " + result1.id + " " + "name: " + " " +
+                    result1.name);
+            })
+        }
+        function addHero() {
+            var id = $("#txt").val();
+            var name = $("#txt2").val();
+            var o = `{"id":${id}, "name":"${name}"}`;
+            $.ajax(heroUrl,
+                {
+                    contentType: "application/json",
+                    method: "post",
+                    data: o
+                }
+            );
+            RefreshList();
+        }
+    </script>
+</head>
+<body>
+    <h1>Wellcome to heroes</h1>
+    <ul id="list1"></ul>
+    <input type="text" id="txt" />
+    <input type="text" id="txt2" />
+    <input type="button" onclick="get2()" value="find hero" />
+    <input type="button" onclick="addHero()" value="add hero" /><br />
+    <span id="spn"></span>
+</body>
+</html>
